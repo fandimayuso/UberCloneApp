@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		549C26A12406220E00CB817F /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C26A02406220E00CB817F /* SignUpController.swift */; };
+		549C26A324063E2A00CB817F /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C26A224063E2A00CB817F /* AuthButton.swift */; };
 		54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6DF23FD0B0800089377 /* AppDelegate.swift */; };
 		54ECF6E223FD0B0800089377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6E123FD0B0800089377 /* SceneDelegate.swift */; };
 		54ECF6E723FD0B0800089377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54ECF6E523FD0B0800089377 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		549C26A02406220E00CB817F /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		549C26A224063E2A00CB817F /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		54ECF6DC23FD0B0800089377 /* UberCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54ECF6DF23FD0B0800089377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54ECF6E123FD0B0800089377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		54ECF6F623FD0BDF00089377 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				549C26A224063E2A00CB817F /* AuthButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				549C26A12406220E00CB817F /* SignUpController.swift in Sources */,
+				549C26A324063E2A00CB817F /* AuthButton.swift in Sources */,
 				54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */,
 				54ECF6F923FD0C3800089377 /* LoginController.swift in Sources */,
 				54ECF6E223FD0B0800089377 /* SceneDelegate.swift in Sources */,
