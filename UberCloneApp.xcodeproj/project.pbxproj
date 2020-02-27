@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2CC859151DE3DB368E64713A /* Pods_UberCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC2A18FA23ADD6E684A772 /* Pods_UberCloneApp.framework */; };
+		5463B0842407B0C50014E6E3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463B0832407B0C50014E6E3 /* HomeController.swift */; };
 		549C26A12406220E00CB817F /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C26A02406220E00CB817F /* SignUpController.swift */; };
 		549C26A324063E2A00CB817F /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C26A224063E2A00CB817F /* AuthButton.swift */; };
 		549C26A5240656D700CB817F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 549C26A4240656D700CB817F /* GoogleService-Info.plist */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		35C3F980432C6BAAA1329880 /* Pods-UberCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneApp.release.xcconfig"; path = "Target Support Files/Pods-UberCloneApp/Pods-UberCloneApp.release.xcconfig"; sourceTree = "<group>"; };
+		5463B0832407B0C50014E6E3 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		549C26A02406220E00CB817F /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		549C26A224063E2A00CB817F /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		549C26A4240656D700CB817F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				54ECF6F823FD0C3800089377 /* LoginController.swift */,
 				549C26A02406220E00CB817F /* SignUpController.swift */,
+				5463B0832407B0C50014E6E3 /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,7 +143,6 @@
 				CC7B728583BEF223FE95CC21 /* Pods-UberCloneApp.debug.xcconfig */,
 				35C3F980432C6BAAA1329880 /* Pods-UberCloneApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -262,6 +264,7 @@
 			files = (
 				549C26A12406220E00CB817F /* SignUpController.swift in Sources */,
 				549C26A324063E2A00CB817F /* AuthButton.swift in Sources */,
+				5463B0842407B0C50014E6E3 /* HomeController.swift in Sources */,
 				54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */,
 				54ECF6F923FD0C3800089377 /* LoginController.swift in Sources */,
 				54ECF6E223FD0B0800089377 /* SceneDelegate.swift in Sources */,

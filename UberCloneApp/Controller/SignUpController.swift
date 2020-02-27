@@ -73,7 +73,7 @@ class SignUpController: UIViewController {
         let button = AuthButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        button.addTarget(self, action: #selector(handlerSignUp), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
         return button
     }()
     
@@ -86,7 +86,7 @@ class SignUpController: UIViewController {
                                                          attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16),
                                                                       NSAttributedString.Key.foregroundColor: UIColor.mainBlueTint]))
         
-        button.addTarget(self, action: #selector(handlerShowLogin), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleShowLogin), for: .touchUpInside)
         
         button.setAttributedTitle(attributedTitle, for: .normal)
         return button
@@ -101,11 +101,11 @@ class SignUpController: UIViewController {
     
     // MARK: - Actions
     
-    @objc func handlerShowLogin() {
+    @objc func handleShowLogin() {
         navigationController?.popViewController(animated: true)
     }
     
-    @objc func handlerSignUp() {
+    @objc func handleSignUp() {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         guard let fullname = fullNameTextField.text else { return }
@@ -124,7 +124,7 @@ class SignUpController: UIViewController {
                           "accountType": accountTypeIndex] as [String : Any]
             
             Database.database().reference().child("users").child(uid).updateChildValues(values) { (error, ref) in
-                print("Successfully registered user and saved data...")
+                print("DEBUG: Successfully registered user and saved data...")
             }
         }
     }

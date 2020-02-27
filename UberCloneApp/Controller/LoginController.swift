@@ -53,7 +53,7 @@ class LoginController: UIViewController {
         let button = AuthButton(type: .system)
         button.setTitle("Log In", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        button.addTarget(self, action: #selector(handlerLogin), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     
@@ -67,7 +67,7 @@ class LoginController: UIViewController {
                                                          attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16),
                                                                       NSAttributedString.Key.foregroundColor: UIColor.mainBlueTint]))
         
-        button.addTarget(self, action: #selector(handlerShowSignUp), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
         
         button.setAttributedTitle(attributedTitle, for: .normal)
         return button
@@ -82,12 +82,12 @@ class LoginController: UIViewController {
     
     // MARK: - Actions
     
-    @objc func handlerShowSignUp() {
+    @objc func handleShowSignUp() {
         let controller = SignUpController()
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    @objc func handlerLogin() {
+    @objc func handleLogin() {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
@@ -97,7 +97,7 @@ class LoginController: UIViewController {
                 return
             }
             
-            print("Successfully logged user in..")
+            print("DEBUG: Successfully logged user in..")
         }
     }
     
