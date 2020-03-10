@@ -5,11 +5,13 @@
 //  Created by Muhammat Fandi Mayuso on 10/3/20.
 //  Copyright © 2020 Muhammat Fandi Mayuso. All rights reserved.
 //
+import CoreLocation
 
 struct User {
     let fullname: String
     let email: String
     let accountType: Int
+    var location: CLLocation?
     
     init(dictionary: [String: Any]) {
         self.fullname = dictionary["fullname"] as? String ?? ""
