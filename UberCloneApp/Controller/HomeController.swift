@@ -23,6 +23,7 @@ class HomeController: UIViewController {
     private let inputActivationView = LocationInputActivationView()
     private let locationInputView = LocationInputView()
     private let tableView = UITableView()
+    private var searchResults = [MKPlacemark]()
     
     private var user: User? {
         didSet { locationInputView.user = user }
@@ -166,6 +167,29 @@ class HomeController: UIViewController {
     
 }
 
+// MARK: - Map Helper Functions
+
+private extension HomeController {
+    func searchBy(natureLanguageQuery: String, completion: @escaping([MKPlacemark]) -> Void) {
+        var results = [MKPlacemark]()
+        
+        let request = MKLocalSearch.Request()
+        request.region = mapView.region
+        request.naturalLanguageQuery = natureLanguageQuery
+        
+        let search = MKLocalSearch(request: request)
+        search.start { (response, error) in
+            guard let response = response else { return }
+            
+            response.mapItems.forEach { item in
+                results.append(item.placemark)
+            }
+            
+            completion(results)
+        }
+    }
+}
+
 // MARK: - MKMapViewDelegate
 
 extension HomeController: MKMapViewDelegate {
@@ -217,6 +241,13 @@ extension HomeController: LocationInputActivationViewDelegate {
 // MARK: - LocationInputViewDelegate
 
 extension HomeController: LocationInputViewDelegate {
+    func executeSearch(query: String) {
+        searchBy(natureLanguageQuery: query) { (results) in
+            self.searchResults = results
+            self.tableView.reloadData()
+        }
+    }
+    
     func dismissLocationInputView() {
         UIView.animate(withDuration: 0.3, animations: {
             self.locationInputView.alpha = 0
@@ -245,7 +276,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 2
         }
-        return 5
+        return searchResults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
