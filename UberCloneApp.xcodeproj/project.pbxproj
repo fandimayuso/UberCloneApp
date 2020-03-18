@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CC859151DE3DB368E64713A /* Pods_UberCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC2A18FA23ADD6E684A772 /* Pods_UberCloneApp.framework */; };
+		54243EDC24225B3600835740 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54243EDB24225B3600835740 /* Trip.swift */; };
 		5463B0842407B0C50014E6E3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463B0832407B0C50014E6E3 /* HomeController.swift */; };
 		5480ABB82417422F00F2B033 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480ABB72417422F00F2B033 /* Service.swift */; };
 		5480ABBA24177ECA00F2B033 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480ABB924177ECA00F2B033 /* User.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		35C3F980432C6BAAA1329880 /* Pods-UberCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneApp.release.xcconfig"; path = "Target Support Files/Pods-UberCloneApp/Pods-UberCloneApp.release.xcconfig"; sourceTree = "<group>"; };
+		54243EDB24225B3600835740 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		5463B0832407B0C50014E6E3 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		5480ABB72417422F00F2B033 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		5480ABB924177ECA00F2B033 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				5480ABB924177ECA00F2B033 /* User.swift */,
 				54DD911F241927170036D2C3 /* DriverAnnotation.swift */,
+				54243EDB24225B3600835740 /* Trip.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				549C26A324063E2A00CB817F /* AuthButton.swift in Sources */,
 				5463B0842407B0C50014E6E3 /* HomeController.swift in Sources */,
 				548410AB24162941008965DB /* LocationInputView.swift in Sources */,
+				54243EDC24225B3600835740 /* Trip.swift in Sources */,
 				54DD9120241927170036D2C3 /* DriverAnnotation.swift in Sources */,
 				54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */,
 				54ECF6F923FD0C3800089377 /* LoginController.swift in Sources */,
