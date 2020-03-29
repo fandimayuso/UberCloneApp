@@ -86,7 +86,7 @@ class HomeController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         guard let trip = trip else { return }
-        print("DEBUG: Trip state is \(trip.state)")
+        print("DEBUG: Trip state is \(trip.state!)")
     }
     
     // MARK: - Actions
@@ -500,7 +500,17 @@ extension HomeController: RideActionViewDelegate {
 
 extension HomeController: PickupControllerDelegate {
     func didAcceptTrip(_ trip: Trip) {
-        self.trip?.state = .accepted
+        let anno = MKPointAnnotation()
+        anno.coordinate = trip.pickupCoordinates
+        mapView.addAnnotation(anno)
+        mapView.selectAnnotation(anno, animated: true)
+        
+        let placemark = MKPlacemark(coordinate: trip.pickupCoordinates)
+        let mapItem = MKMapItem(placemark: placemark)
+        generatePolyline(toDestination: mapItem)
+        
+        mapView.zoomToFit(annotations: mapView.annotations)
+        
         self.dismiss(animated: true, completion: nil)
     }
 }
