@@ -236,6 +236,8 @@ class RideActionView: UIView {
                 buttonAction = .dropOff
                 actionButton.setTitle(buttonAction.description, for: .normal)
             }
+            
+            titleLabel.text = "Arrived at Destination"
         }
     }
 }
