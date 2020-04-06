@@ -21,6 +21,8 @@ class ContainerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .backgroundColor
+        
         configureHomeController()
         configureMenuController()
     }
@@ -54,6 +56,8 @@ class ContainerController: UIViewController {
         }
     }
 }
+
+// MARK: - HomeControllerDelegate
 
 extension ContainerController: HomeControllerDelegate {
     func handleMenuToggle() {

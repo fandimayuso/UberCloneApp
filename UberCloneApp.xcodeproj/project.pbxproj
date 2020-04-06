@@ -22,6 +22,7 @@
 		54A971DC241E2C050018093D /* RideActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A971DB241E2C050018093D /* RideActionView.swift */; };
 		54B2EFB8243ADB1100EB5418 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B2EFB7243ADB1100EB5418 /* MenuController.swift */; };
 		54B2EFBA243ADB9200EB5418 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B2EFB9243ADB9200EB5418 /* ContainerController.swift */; };
+		54B2EFBC243AE53700EB5418 /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B2EFBB243AE53700EB5418 /* MenuHeader.swift */; };
 		54DD9120241927170036D2C3 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD911F241927170036D2C3 /* DriverAnnotation.swift */; };
 		54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6DF23FD0B0800089377 /* AppDelegate.swift */; };
 		54ECF6E223FD0B0800089377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6E123FD0B0800089377 /* SceneDelegate.swift */; };
@@ -49,6 +50,7 @@
 		54A971DB241E2C050018093D /* RideActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideActionView.swift; sourceTree = "<group>"; };
 		54B2EFB7243ADB1100EB5418 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		54B2EFB9243ADB9200EB5418 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		54B2EFBB243AE53700EB5418 /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
 		54DD911F241927170036D2C3 /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
 		54ECF6DC23FD0B0800089377 /* UberCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54ECF6DF23FD0B0800089377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				548410AA24162941008965DB /* LocationInputView.swift */,
 				548410AC241646BB008965DB /* LocationCell.swift */,
 				54A971DB241E2C050018093D /* RideActionView.swift */,
+				54B2EFBB243AE53700EB5418 /* MenuHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				54B2EFB8243ADB1100EB5418 /* MenuController.swift in Sources */,
 				54EE50CC2417D413000C07A1 /* LocationHandler.swift in Sources */,
 				54B2EFBA243ADB9200EB5418 /* ContainerController.swift in Sources */,
+				54B2EFBC243AE53700EB5418 /* MenuHeader.swift in Sources */,
 				54ECF6E223FD0B0800089377 /* SceneDelegate.swift in Sources */,
 				54A971DC241E2C050018093D /* RideActionView.swift in Sources */,
 				5480ABBA24177ECA00F2B033 /* User.swift in Sources */,
