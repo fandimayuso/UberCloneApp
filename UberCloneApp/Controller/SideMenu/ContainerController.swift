@@ -136,6 +136,7 @@ class ContainerController: UIViewController {
             }, completion: completion)
         }
         
+        // FIXME: - Animation should be more smooth
         animateStatusBar()
     }
     
