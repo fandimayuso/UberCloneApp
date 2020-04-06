@@ -20,6 +20,8 @@
 		549C26A324063E2A00CB817F /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549C26A224063E2A00CB817F /* AuthButton.swift */; };
 		549C26A5240656D700CB817F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 549C26A4240656D700CB817F /* GoogleService-Info.plist */; };
 		54A971DC241E2C050018093D /* RideActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A971DB241E2C050018093D /* RideActionView.swift */; };
+		54B2EFB8243ADB1100EB5418 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B2EFB7243ADB1100EB5418 /* MenuController.swift */; };
+		54B2EFBA243ADB9200EB5418 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B2EFB9243ADB9200EB5418 /* ContainerController.swift */; };
 		54DD9120241927170036D2C3 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD911F241927170036D2C3 /* DriverAnnotation.swift */; };
 		54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6DF23FD0B0800089377 /* AppDelegate.swift */; };
 		54ECF6E223FD0B0800089377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6E123FD0B0800089377 /* SceneDelegate.swift */; };
@@ -45,6 +47,8 @@
 		549C26A224063E2A00CB817F /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		549C26A4240656D700CB817F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54A971DB241E2C050018093D /* RideActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideActionView.swift; sourceTree = "<group>"; };
+		54B2EFB7243ADB1100EB5418 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		54B2EFB9243ADB9200EB5418 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		54DD911F241927170036D2C3 /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
 		54ECF6DC23FD0B0800089377 /* UberCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54ECF6DF23FD0B0800089377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54B2EFB5243ADAB300EB5418 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				54ECF6F823FD0C3800089377 /* LoginController.swift */,
+				549C26A02406220E00CB817F /* SignUpController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		54B2EFB6243ADAE900EB5418 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				54B2EFB7243ADB1100EB5418 /* MenuController.swift */,
+				54B2EFB9243ADB9200EB5418 /* ContainerController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		54ECF6D323FD0B0800089377 = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +151,8 @@
 		54ECF6F523FD0BDD00089377 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				54ECF6F823FD0C3800089377 /* LoginController.swift */,
-				549C26A02406220E00CB817F /* SignUpController.swift */,
+				54B2EFB6243ADAE900EB5418 /* SideMenu */,
+				54B2EFB5243ADAB300EB5418 /* Authentication */,
 				5463B0832407B0C50014E6E3 /* HomeController.swift */,
 				54860A1924235E2C004AF065 /* PickupController.swift */,
 			);
@@ -302,7 +324,9 @@
 				54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */,
 				54ECF6F923FD0C3800089377 /* LoginController.swift in Sources */,
 				548410AD241646BB008965DB /* LocationCell.swift in Sources */,
+				54B2EFB8243ADB1100EB5418 /* MenuController.swift in Sources */,
 				54EE50CC2417D413000C07A1 /* LocationHandler.swift in Sources */,
+				54B2EFBA243ADB9200EB5418 /* ContainerController.swift in Sources */,
 				54ECF6E223FD0B0800089377 /* SceneDelegate.swift in Sources */,
 				54A971DC241E2C050018093D /* RideActionView.swift in Sources */,
 				5480ABBA24177ECA00F2B033 /* User.swift in Sources */,
