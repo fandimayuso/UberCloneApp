@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2CC859151DE3DB368E64713A /* Pods_UberCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC2A18FA23ADD6E684A772 /* Pods_UberCloneApp.framework */; };
 		54243EDC24225B3600835740 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54243EDB24225B3600835740 /* Trip.swift */; };
+		544C5A83243C8B7500A3291D /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C5A82243C8B7500A3291D /* UserInfoHeader.swift */; };
 		5463B0842407B0C50014E6E3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463B0832407B0C50014E6E3 /* HomeController.swift */; };
 		5465A673243B832100713387 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465A672243B832100713387 /* SettingsController.swift */; };
 		5480ABB82417422F00F2B033 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480ABB72417422F00F2B033 /* Service.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		35C3F980432C6BAAA1329880 /* Pods-UberCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneApp.release.xcconfig"; path = "Target Support Files/Pods-UberCloneApp/Pods-UberCloneApp.release.xcconfig"; sourceTree = "<group>"; };
 		54243EDB24225B3600835740 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		544C5A82243C8B7500A3291D /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		5463B0832407B0C50014E6E3 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		5465A672243B832100713387 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		5480ABB72417422F00F2B033 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				548410AC241646BB008965DB /* LocationCell.swift */,
 				54A971DB241E2C050018093D /* RideActionView.swift */,
 				54B2EFBB243AE53700EB5418 /* MenuHeader.swift */,
+				544C5A82243C8B7500A3291D /* UserInfoHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				549C26A12406220E00CB817F /* SignUpController.swift in Sources */,
 				549C26A324063E2A00CB817F /* AuthButton.swift in Sources */,
 				5463B0842407B0C50014E6E3 /* HomeController.swift in Sources */,
+				544C5A83243C8B7500A3291D /* UserInfoHeader.swift in Sources */,
 				5465A673243B832100713387 /* SettingsController.swift in Sources */,
 				548410AB24162941008965DB /* LocationInputView.swift in Sources */,
 				54243EDC24225B3600835740 /* Trip.swift in Sources */,
