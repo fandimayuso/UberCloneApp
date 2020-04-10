@@ -51,8 +51,6 @@ class AddLocationController: UITableViewController {
         print("DEBUG: Location is \(location)")
     }
     
-    // MARK: - Actions
-    
     // MARK: - Helper Functions
     
     func configureTableView() {
