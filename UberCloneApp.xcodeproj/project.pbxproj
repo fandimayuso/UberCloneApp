@@ -35,6 +35,7 @@
 		54ECF6F923FD0C3800089377 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6F823FD0C3800089377 /* LoginController.swift */; };
 		54ECF6FB23FD1F6C00089377 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECF6FA23FD1F6C00089377 /* Extensions.swift */; };
 		54EE50CC2417D413000C07A1 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE50CB2417D413000C07A1 /* LocationHandler.swift */; };
+		54FF9FED24401C35006A24AB /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF9FEC24401C35006A24AB /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		54ECF6F823FD0C3800089377 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		54ECF6FA23FD1F6C00089377 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		54EE50CB2417D413000C07A1 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		54FF9FEC24401C35006A24AB /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		CC7B728583BEF223FE95CC21 /* Pods-UberCloneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneApp.debug.xcconfig"; path = "Target Support Files/Pods-UberCloneApp/Pods-UberCloneApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CFDC2A18FA23ADD6E684A772 /* Pods_UberCloneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberCloneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,6 +189,7 @@
 				54A971DB241E2C050018093D /* RideActionView.swift */,
 				54B2EFBB243AE53700EB5418 /* MenuHeader.swift */,
 				544C5A82243C8B7500A3291D /* UserInfoHeader.swift */,
+				54FF9FEC24401C35006A24AB /* CircularProgressView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				54860A1A24235E2C004AF065 /* PickupController.swift in Sources */,
 				54DD9120241927170036D2C3 /* DriverAnnotation.swift in Sources */,
 				54ECF6E023FD0B0800089377 /* AppDelegate.swift in Sources */,
+				54FF9FED24401C35006A24AB /* CircularProgressView.swift in Sources */,
 				54ECF6F923FD0C3800089377 /* LoginController.swift in Sources */,
 				548EBFD8243D75E600B87E02 /* AddLocationController.swift in Sources */,
 				548410AD241646BB008965DB /* LocationCell.swift in Sources */,
